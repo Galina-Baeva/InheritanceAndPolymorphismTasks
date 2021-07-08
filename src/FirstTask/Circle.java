@@ -7,6 +7,8 @@ public class Circle {
     final double pi = 3.14;
 
     public Circle() {
+        radius = 1.0;
+        colour = Colour.GREEN;
     }
 
     public Circle(double radius) {
@@ -35,12 +37,10 @@ public class Circle {
     }
 
     public double getArea() {
-        double area = pi * radius * radius;
-        return area;
+        return pi * radius * radius;
     }
 
-    public String toString() {
+    public void toStringg() {
         System.out.println("This is a " + colour + " circle with a radius of " + radius + " sm.");
-        return null;
     }
 }

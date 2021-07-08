@@ -4,6 +4,8 @@ public class Cylinder extends Circle {
     double height;
 
     public Cylinder() {
+        super();
+        height = 1;
     }
 
     public Cylinder(double radius) {
@@ -29,17 +31,14 @@ public class Cylinder extends Circle {
     }
 
     public double getArea() {
-        double area = 2 * pi * radius * (height + radius);
-        return area;
+        return 2 * pi * radius * (height + radius);
     }
 
     public double getVolume() {
-        double volume = height * super.getArea();
-        return volume;
+        return height * super.getArea();
     }
-    public String toString() {
+    public void toStringg() {
         System.out.println("This is a " + colour + " cylinder with a radius of " + radius + " sm. and a height of " + height + " sm.");
-        return null;
     }
 
 }
