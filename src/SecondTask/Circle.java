@@ -5,10 +5,12 @@ public class Circle extends Shape {
     double radius;
 
     public Circle() {
+        super();
         radius = 1.0;
     }
 
     public Circle(double radius) {
+        super();
         this.radius = radius;
     }
 

@@ -5,10 +5,12 @@ public class Rectangle extends Shape {
     double length;
 
     public Rectangle() {
+        super();
         width = 1.0;
         length = 1.0;
     }
     public Rectangle(double width, double length){
+        super();
         this.width = width;
         this.length = length;
     }
