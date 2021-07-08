@@ -45,7 +45,7 @@ public class Math {
     static int nextAfter(int[] array, int number) {
         int i = 0;
         while (i < array.length) {
-            if (array[i] < number) {
+            if (array[i] <= number) {
                 i++;
             } else {
                 return array[i];
@@ -57,7 +57,7 @@ public class Math {
     static double nextAfter(double[] array, double number) {
         int i = 0;
         while (i < array.length) {
-            if (array[i] < number) {
+            if (array[i] <= number) {
                 i++;
             } else {
                 return array[i];
