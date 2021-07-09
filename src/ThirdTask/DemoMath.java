@@ -2,10 +2,10 @@ package ThirdTask;
 
 public class DemoMath {
     public static void main(String[] args) {
-        int intNumber = 49;
+        int intNumber = 9;
         int powNumber = 3;
         double doubNumber = 3.2;
-        int[] intArray = {30, 6, 56, 2, 12};
+        int[] intArray = {3, 6, 5, 2, 12};
         double[] doubArray = {7.3, 8.1, 6.7, 23, 125};
         System.out.println("The lowest number in the array  = " + Math.min(intArray));
         System.out.println("the lowest number in the array = " + Math.min(doubArray));

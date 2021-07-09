@@ -43,23 +43,17 @@ public class Math {
     }
 
     static int nextAfter(int[] array, int number) {
-        int i = 0;
-        while (i < array.length) {
-            if (array[i] <= number) {
-                i++;
-            } else {
+        for (int i = 0; i < array.length; i++){
+            if (array[i] > number) {
                 return array[i];
             }
         }
         return 0;
     }
 
-    static double nextAfter(double[] array, double number) {
-        int i = 0;
-        while (i < array.length) {
-            if (array[i] <= number) {
-                i++;
-            } else {
+    static double nextAfter(double[] array, double number) { ;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > number) {
                 return array[i];
             }
         }

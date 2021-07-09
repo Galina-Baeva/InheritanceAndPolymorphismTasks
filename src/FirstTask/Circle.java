@@ -1,46 +1,46 @@
 package FirstTask;
 
 public class Circle {
-    double radius;
-    Colour colour;
+    protected double radius;
+    protected Colour colour;
 
-    final double pi = 3.14;
+    protected final double pi = 3.14;
 
-    public Circle() {
+     Circle() {
         radius = 1.0;
         colour = Colour.GREEN;
     }
 
-    public Circle(double radius) {
+    protected Circle(double radius) {
         this.radius = radius;
     }
 
-    public Circle(double radius, Colour colour) {
+    protected Circle(double radius, Colour colour) {
         this.radius = radius;
         this.colour = colour;
     }
 
-    public double getRadius() {
+    private double getRadius() {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    private void setRadius(double radius) {
         this.radius = radius;
     }
 
-    public Colour getColour() {
+    private Colour getColour() {
         return colour;
     }
 
-    public void setColour(Colour colour) {
+    private void setColour(Colour colour) {
         this.colour = colour;
     }
 
-    public double getArea() {
+    protected double getArea() {
         return pi * radius * radius;
     }
 
-    public void toStringg() {
+    protected void toStringg() {
         System.out.println("This is a " + colour + " circle with a radius of " + radius + " sm.");
     }
 }

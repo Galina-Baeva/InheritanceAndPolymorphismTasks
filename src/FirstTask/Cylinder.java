@@ -3,42 +3,42 @@ package FirstTask;
 public class Cylinder extends Circle {
     double height;
 
-    public Cylinder() {
+    protected Cylinder() {
         super();
         height = 1;
     }
 
-    public Cylinder(double radius) {
+    protected Cylinder(double radius) {
         super(radius);
     }
 
-    public Cylinder(double radius, double height) {
+    protected Cylinder(double radius, double height) {
         super(radius);
         this.height = height;
     }
 
-    public Cylinder(double radius, double height, Colour colour) {
+    protected Cylinder(double radius, double height, Colour colour) {
         super(radius, colour);
         this.height = height;
     }
 
-    public double getHeight() {
+    private double getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
+    private void setHeight(double height) {
         this.height = height;
     }
 
-    public double getArea() {
+    protected double getArea() {
         return 2 * pi * radius * (height + radius);
     }
 
-    public double getVolume() {
+    protected double getVolume() {
         return height * super.getArea();
     }
 
-    public void toStringg() {
+    protected void toStringg() {
         System.out.println("This is a " + colour + " cylinder with a radius of " + radius + " sm. and a height of " + height + " sm.");
     }
 
